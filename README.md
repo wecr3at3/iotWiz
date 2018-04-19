@@ -1,1 +1,1 @@
-# iotWiz
+# IPython repo
