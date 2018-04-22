@@ -1,0 +1,380 @@
+<style>
+  .higlighted{
+    background-color: yellow
+  }
+</style>
+<table style="width: 100%;" border="1" class="data-types-table">
+<tbody>
+</tbody><tbody>
+<div id="clear"><tr id="fixed">
+<td style="font-size: 15px; padding: 10px;"><b>Data Type</b></td>
+<td style="font-size: 15px; padding: 10px;" colspan="2"><b>Type Constant &amp; Value</b></td>
+<td style="font-size: 15px; padding: 10px;"><b>Unit</b></td>
+<td style="font-size: 15px; padding: 10px;" colspan="2"><b>Unit Constant &amp; Value</b></td>
+<td style="font-size: 15px; padding: 10px;"><b>Map</b></td>
+</tr></div>
+<div><tr id="clear">
+<td><span>Digital Sensor</span></td>
+<td><span>DIGITAL_SENSOR</span></td>
+<td class = "higlighted"><span>digital_sensor</span></td>
+<td><span>Digital (0/1)</span></td>
+<td><span>DIGITAL</span></td>
+<td class = "higlighted"><span>d</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Analog Sensor</span></td>
+<td><span>ANALOG_SENSOR</span></td>
+<td class = "higlighted"><span>analog_sensor</span></td>
+<td><span>Analog</span></td>
+<td><span>ANALOG</span></td>
+<td class = "higlighted"><span>null</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Acceleration</span></td>
+<td><span>ACCELERATION</span></td>
+<td class = "higlighted"><span>accel</span></td>
+<td><span>Acceleration</span></td>
+<td><span>G</span></td>
+<td class = "higlighted"><span>g</span></td>
+<td>gx,gy,gz</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Barometric pressure</span></td>
+<td rowspan="2"><span>BAROMETRIC_PRESSURE</span></td>
+<td rowspan="2" class = "higlighted"><span>bp</span></td>
+<td><span>* Pascal</span></td>
+<td><span>PASCAL</span></td>
+<td class = "higlighted"><span>pa</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Hecto Pascal</span></td>
+<td><span>HECTOPASCAL</span></td>
+<td class = "higlighted"><span>hpa</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="3"><span>Battery</span></td>
+<td rowspan="3"><span>BATTERY</span></td>
+<td rowspan="3" class = "higlighted"><span>batt</span></td>
+<td><span>% (0 to 100)</span></td>
+<td><span>PERCENT</span></td>
+<td class = "higlighted"><span>p</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Ratio</span></td>
+<td><span>RATIO</span></td>
+<td class = "higlighted"><span>r</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>* Volts</span></td>
+<td><span>VOLTS</span></td>
+<td class = "higlighted"><span>v</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Carbon Dioxide</span></td>
+<td><span>CO2</span></td>
+<td class = "higlighted"><span>co2</span></td>
+<td><span>Parts per milliion</span></td>
+<td><span>PPM</span></td>
+<td class = "higlighted"><span>ppm</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Counter</span></td>
+<td><span>COUNTER</span></td>
+<td class = "higlighted"><span>counter</span></td>
+<td><span>Analog</span></td>
+<td><span>ANALOG</span></td>
+<td class = "higlighted"><span>null</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Current</span></td>
+<td rowspan="2"><span>CURRENT</span></td>
+<td rowspan="2" class = "higlighted"><span>current</span></td>
+<td><span>* Ampere</span></td>
+<td><span>AMP</span></td>
+<td class = "higlighted"><span>a</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Milliampere</span></td>
+<td><span>MAMP</span></td>
+<td class = "higlighted"><span>ma</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Energy</span></td>
+<td><span>ENERGY</span></td>
+<td class = "higlighted"><span>energy</span></td>
+<td><span>Killowatt Hour</span></td>
+<td><span>KWH</span></td>
+<td class = "higlighted"><span>kwh</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>External Waterleak</span></td>
+<td><span>EXT_WATERLEAK</span></td>
+<td class = "higlighted"><span>ext_wleak</span></td>
+<td><span>Analog</span></td>
+<td><span>ANALOG</span></td>
+<td class = "higlighted"><span>null</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Frequency</span></td>
+<td><span>FREQUENCY</span></td>
+<td class = "higlighted"><span>freq</span></td>
+<td><span>Hertz</span></td>
+<td><span>HERTZ</span></td>
+<td class = "higlighted"><span>hz</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>GPS</span></td>
+<td><span>GPS</span></td>
+<td class = "higlighted"><span>gps</span></td>
+<td><span>* GPS</span></td>
+<td><span>GPS</span></td>
+<td class = "higlighted"><span>m</span></td>
+<td>lat,long,alt</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Gyroscope</span></td>
+<td rowspan="2"><span>GYROSCOPE</span></td>
+<td rowspan="2" class = "higlighted"><span>gyro</span></td>
+<td><span>* Rotation per minute</span></td>
+<td><span>ROTATION_PER_MINUTE</span></td>
+<td class = "higlighted"><span>rpm</span></td>
+<td>gyro_x,gyro_y,gyro_z</td>
+</tr>
+<tr>
+<td><span>Degree per second</span></td>
+<td><span>DEGREE_PER_SEC</span></td>
+<td class = "higlighted"><span>dps</span></td>
+<td>gyro_x,gyro_y,gyro_z</td>
+</tr>
+<tr>
+<td rowspan="4"><span>Luminosity</span></td>
+<td rowspan="4"><span>LUMINOSITY</span></td>
+<td rowspan="4" class = "higlighted"><span>lum</span></td>
+<td><span>* Lux</span></td>
+<td><span>LUX</span></td>
+<td class = "higlighted"><span>lux</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Volts</span></td>
+<td><span>VOLTS</span></td>
+<td class = "higlighted"><span>v</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>% (0 to 100)</span></td>
+<td><span>PERCENT</span></td>
+<td class = "higlighted"><span>p</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Ratio</span></td>
+<td><span>RATIO</span></td>
+<td class = "higlighted"><span>r</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Motion</span></td>
+<td><span>MOTION</span></td>
+<td class = "higlighted"><span>motion</span></td>
+<td><span>Digital (0/1)</span></td>
+<td><span>DIGITAL</span></td>
+<td class = "higlighted"><span>d</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Power</span></td>
+<td rowspan="2"><span>POWER</span></td>
+<td rowspan="2" class = "higlighted"><span>pow</span></td>
+<td><span>* Watts</span></td>
+<td><span>WATT</span></td>
+<td class = "higlighted"><span>w</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Kilowatts</span></td>
+<td><span>KILOWATT</span></td>
+<td class = "higlighted"><span>kw</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="3"><span>Proximity</span></td>
+<td rowspan="3"><span>PROXIMITY</span></td>
+<td rowspan="3" class = "higlighted"><span>prox</span></td>
+<td><span>* Centimeter</span></td>
+<td><span>CENTIMETER</span></td>
+<td class = "higlighted"><span>cm</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Meter</span></td>
+<td><span>METER</span></td>
+<td class = "higlighted"><span>m</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Digital (0/1)</span></td>
+<td><span>DIGITAL</span></td>
+<td class = "higlighted"><span>d</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Rain Level</span></td>
+<td rowspan="2"><span>RAIN_LEVEL</span></td>
+<td rowspan="2" class = "higlighted"><span>rain_level</span></td>
+<td><span>Centimeter</span></td>
+<td><span>CENTIMETER</span></td>
+<td class = "higlighted"><span>cm</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>* Millimeter</span></td>
+<td><span>MILLIMETER</span></td>
+<td class = "higlighted"><span>mm</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Received signal strength indicator</span></td>
+<td><span>RSSI</span></td>
+<td class = "higlighted"><span>rssi</span></td>
+<td><span>dBm</span></td>
+<td><span>DBM</span></td>
+<td class = "higlighted"><span>dbm</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Relative Humidity</span></td>
+<td rowspan="2"><span>RELATIVE_HUMIDITY</span></td>
+<td rowspan="2" class = "higlighted"><span>rel_hum</span></td>
+<td><span>* Percent (%)</span></td>
+<td><span>PERCENT</span></td>
+<td class = "higlighted"><span>p</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Ratio</span></td>
+<td><span>RATIO</span></td>
+<td class = "higlighted"><span>r</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Resistance</span></td>
+<td><span>RESISTANCE</span></td>
+<td class = "higlighted"><span>res</span></td>
+<td><span>Ohm</span></td>
+<td><span>OHM</span></td>
+<td class = "higlighted"><span>ohm</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Signal Noise Ratio</span></td>
+<td><span>SNR</span></td>
+<td class = "higlighted"><span>snr</span></td>
+<td><span>Decibels</span></td>
+<td><span>DB</span></td>
+<td class = "higlighted"><span>db</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Soil Moisture</span></td>
+<td><span>SOIL_MOISTURE</span></td>
+<td class = "higlighted"><span>soil_moist</span></td>
+<td><span>Percent (%)</span></td>
+<td><span>PERCENT</span></td>
+<td class = "higlighted"><span>p</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Soil pH</span></td>
+<td><span>SOIL_PH</span></td>
+<td class = "higlighted"><span>soil_ph</span></td>
+<td><span>Analog</span></td>
+<td><span>ANALOG</span></td>
+<td class = "higlighted"><span>null</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Soil Water Tension</span></td>
+<td rowspan="2"><span>SOIL_WATER_TENSION</span></td>
+<td rowspan="2" class = "higlighted"><span>soil_w_ten</span></td>
+<td><span>* Kilopascal</span></td>
+<td><span>KILOPASCAL</span></td>
+<td class = "higlighted"><span>kpa</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Pascal</span></td>
+<td><span>PASCAL</span></td>
+<td class = "higlighted"><span>pa</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Tank Level</span></td>
+<td><span>TANK_LEVEL</span></td>
+<td class = "higlighted"><span>tl</span></td>
+<td><span>Analog</span></td>
+<td><span>ANALOG</span></td>
+<td class = "higlighted"><span>null</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="3"><span>Temperature</span></td>
+<td rowspan="3"><span>TEMPERATURE</span></td>
+<td rowspan="3" class = "higlighted"><span>temp</span></td>
+<td><span>Fahrenheit</span></td>
+<td><span>FAHRENHEIT</span></td>
+<td class = "higlighted"><span>f</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>* Celsius</span></td>
+<td><span>CELSIUS</span></td>
+<td class = "higlighted"><span>c</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Kelvin</span></td>
+<td><span>KELVIN</span></td>
+<td class = "higlighted"><span>k</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2"><span>Voltage</span></td>
+<td rowspan="2"><span>VOLTAGE</span></td>
+<td rowspan="2" class = "higlighted"><span>voltage</span></td>
+<td><span>* Volts</span></td>
+<td><span>VOLTS</span></td>
+<td class = "higlighted"><span>v</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Millivolts</span></td>
+<td><span>MILLIVOLTS</span></td>
+<td class = "higlighted"><span>mv</span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><span>Wind Speed</span></td>
+<td><span>WIND_SPEED</span></td>
+<td class = "higlighted"><span>wind_speed</span></td>
+<td><span>Kilometer per hour</span></td>
+<td><span>KM_PER_H</span></td>
+<td class = "higlighted"><span>kmh</span></td>
+<td>&nbsp;</td>
+</tr>
+</div>
+</table>
