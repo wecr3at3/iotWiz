@@ -26,7 +26,7 @@ def sub_cb(ledTopic, msg):
     else:
         print('I didn\'t recieve shit!')
 
-myEspClient = MQTT("15c64500-4965-11e8-b4ef-898f2f5b9050","mqtt.mydevices.com",1883,"2689f050-995a-11e7-b0e9-e9adcff3788e","c320eee89ad304367312c68a8a0b5d05ac0f385e")
+myEspClient = MQTTClient("15c64500-4965-11e8-b4ef-898f2f5b9050","mqtt.mydevices.com",1883,"2689f050-995a-11e7-b0e9-e9adcff3788e","c320eee89ad304367312c68a8a0b5d05ac0f385e")
 myEspClient.set_callback(sub_cb)
 myEspClient.connect()
 #
