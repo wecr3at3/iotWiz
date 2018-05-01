@@ -33,9 +33,13 @@ myEspClient.connect()
 # subscribing to a TOPIC at cayenne. Atleast 1 argument required
 #
 myEspClient.subscribe(b"v1/2689f050-995a-11e7-b0e9-e9adcff3788e/things/15c64500-4965-11e8-b4ef-898f2f5b9050/data/0")
-
 time.sleep(500)
-myEspClient.disconnect()
+
+try:
+	myEspClient.wait_msg()
+finally:
+	myEspClient.disconnect()
+	print('Connection Lost with the Broker')
 
 
 
