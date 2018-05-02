@@ -16,12 +16,12 @@ def sub_cb(ledTopic, msg):
         state = 1
     elif msg == b"off":
 	print('Recieved:',msg)
-        led.value(1)
+        ledState.value(1)
         state = 0
     elif msg == b"toggle":
         # LED is inversed, so setting it to current state
         # value will make it toggle
-        led.value(state)
+        ledState.value(state)
         state = 1 - state
     else:
         print('I didn\'t recieve shit!')
