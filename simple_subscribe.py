@@ -1,9 +1,9 @@
 import machine,time
-from machine import Pin
+from machine import Pin,PWM
 from umqtt.simple import MQTTClient
 
 ledPin = 2
-Pin(ledPin,Pin.OUT,value = 1)
+ledState = Pin(ledPin,Pin.OUT,value = 1)
 
 state = 0
 
@@ -12,7 +12,7 @@ def sub_cb(ledTopic, msg):
     print((ledTopic, msg))
     if msg == b"on":
 	print('Recieved:',msg)
-        led.value(0)
+        ledState.value(0)
         state = 1
     elif msg == b"off":
 	print('Recieved:',msg)
